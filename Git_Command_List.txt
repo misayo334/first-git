@@ -9,3 +9,10 @@ git status:         ワークツリーとインデックスの状況をファイ
 git diff:           ワークツリーとインデックスを比較して、その差分を表示する。
 git diff --cached:  インデックスとローカルリポジトリの基準コミットとの差分
 git log:            過去のコミット履歴を確認する。
+
+git remote add origin https://github.com/ユーザ名(=misayo334)/githubで作成したレポジトリ名.git:   ローカルリポジトリにリモートリポジトリを登録する。 
+git remote -v:              リモートリポジトリの登録状況を確認する。  
+git push origin master:     登録したリモートリポジトリへプッシュして、ローカルでのコミットを反映させる。
+git remote remove origin:   リモートリポジトリの登録を削除する（URLが間違っていた場合など）。
+git remote set-url origin   リモートリポジトリURL (ie. https://github.com/ユーザ名(=misayo334)/githubで作成したレポジトリ名.git): リモートリポジトリの登録を更新する。
+git push -f origin master:  強制的にリモートリポジトリをローカルリポジトリで上書きする。
